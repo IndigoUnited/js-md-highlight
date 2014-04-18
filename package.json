@@ -1,6 +1,6 @@
 {
   "name": "md-highlight",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/highlighter",
   "description": "A markdown syntax highlighter",
   "author": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
@@ -20,8 +20,6 @@
     "url": "https://github.com/IndigoUnited/js-md-highlight/issues/"
   },
   "scripts": {
-    "prepublish": "node build",
-    "publish": "git reset --hard HEAD",
     "test": "testem ci --skip chromium"
   },
   "devDependencies": {
