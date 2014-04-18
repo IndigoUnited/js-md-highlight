@@ -1,11 +1,11 @@
-# md-highlight
+# md-highlight [![Build Status](https://travis-ci.org/IndigoUnited/js-md-highlight.svg?branch=master)](https://travis-ci.org/IndigoUnited/js-md-highlight)
 
 A library that highlights markdown (+ git flavored markdown).
 This library grammar/parser is heavily based on [marked](git@github.com:chjj/marked.git).
 
 Note that this library is not "yet another markdown to html" converter.
 This library is meant to be used by markdown editors to provide syntax highlighting.
- 
+
 
 ## API
 
