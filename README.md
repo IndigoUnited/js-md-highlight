@@ -3,7 +3,7 @@
 A library that highlights markdown (+ git flavored markdown).
 This library grammar/parser is heavily based on [marked](git@github.com:chjj/marked.git).
 
-Note that this library is not "yet another markdown to html" converter.
+Note that this library is not `yet another markdown to html` converter.
 This library is meant to be used by markdown editors to provide syntax highlighting.
 
 
@@ -53,7 +53,7 @@ paths : {
 // ...
 ```
 
-Note that if you want to support `IE8` or lower you will need to install [es5-shim](https://github.com/kriskowal/es5-shim.git) and require both `es5-shim` with your AMD loader before requiring this library.
+Note that if you want to support `IE8` or lower you will need to install [es5-shim](https://github.com/kriskowal/es5-shim.git) and require `es5-shim` with your AMD loader before requiring this library.
 
 
 
