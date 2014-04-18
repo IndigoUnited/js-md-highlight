@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>md-highlighter playground</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="../../bower_components/requirejs/require.js"></script>
+        <script>
+            require({
+                baseUrl: '../../',
+                paths: {
+                    'text': 'bower_components/requirejs-text/text',
+                    'es5-shim': 'bower_components/es5-shim/es5-shim'
+                },
+                shim: {
+
+                },
+                deps: ['es5-shim'],
+                waitSeconds: (window.location.protocol === 'file:' || window.location.href.indexOf('://localhost') !== -1) ? 5 : 45, // Fail early locally
+                urlArgs: 'bust=' + (+new Date())
+            });
+
+            require(['lib/highlighter', 'text!test/files/mou.md'], function (highlighter, mou) {
+                var el = document.getElementById('test');
+
+                el.innerHTML = highlighter.highlight(mou);
+
+                el.addEventListener('input', function () {
+                    setTimeout(function () {
+                        el.innerHTML = highlighter.highlight(el.innerText);
+                    }, 1000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <pre><div id="test" contenteditable="true"></div></pre>
+    </body>
+</html>

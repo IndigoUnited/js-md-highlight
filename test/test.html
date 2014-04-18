@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>md-highlighter tests</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../bower_components/mocha/mocha.css" />
+        <script src="../bower_components/mocha/mocha.js"></script>
+        <!-- Testem support -->
+        <script type="text/javascript">
+        if (location.hash.indexOf('#testem') !== -1) {
+            document.write('<script src="/testem.js"></'+'script>');
+        }
+        </script>
+        <script src="../bower_components/requirejs/require.js"></script>
+        <script>
+            mocha.setup('bdd');
+
+            require({
+                baseUrl: '../',
+                paths: {
+                    'text': 'bower_components/requirejs-text/text',
+                    'es5-shim': 'bower_components/es5-shim/es5-shim',
+                    'expect': 'bower_components/expect/expect',
+                    'dom-ready': 'bower_components/requirejs-domready/domReady'
+                },
+                shim: {
+                    'expect': {
+                        exports: 'expect'
+                    }
+                },
+                waitSeconds: (window.location.protocol === 'file:' || window.location.href.indexOf('://localhost') !== -1) ? 5 : 45, // Fail early locally
+                urlArgs: 'bust=' + (+new Date())
+            });
+
+            require(['dom-ready!', 'es5-shim'], function () {
+                require(['test/test'], mocha.run.bind(mocha));
+            });
+        </script>
+    </head>
+    <body>
+        <div id="mocha"></div>
+    </body>
+</html>
