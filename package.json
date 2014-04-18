@@ -6,10 +6,13 @@
     "url": "git://github.com/IndigoUnited/js-md-highlight.git"
   },
   "scripts": {
+    "prepublish": "node build",
+    "publish": "git reset --hard HEAD",
     "test": "testem ci --skip chromium"
   },
   "devDependencies": {
-    "testem": "~0.6.0"
+    "testem": "~0.6.0",
+    "nodefy": "~0.2.2"
   },
   "dependencies": {}
 }
