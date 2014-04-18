@@ -1,11 +1,14 @@
 {
   "name": "md-highlight",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/highlighter.js",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "build.js",
+    "testem.json",
+    "test"
   ],
   "devDependencies": {
     "expect": "~0.2.0",

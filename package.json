@@ -1,9 +1,23 @@
 {
   "name": "md-highlight",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "main": "lib/highlighter",
+  "description": "A markdown syntax highlighter",
+  "author": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
+  "license": "MIT",
+  "keywords": [
+    "md",
+    "markdown",
+    "syntax",
+    "highlight",
+    "highlighter"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/IndigoUnited/js-md-highlight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IndigoUnited/js-md-highlight/issues/"
   },
   "scripts": {
     "prepublish": "node build",
