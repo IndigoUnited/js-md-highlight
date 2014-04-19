@@ -160,23 +160,23 @@ A simple table looks like this:
 -------------- | ------------- | ------------
 <span class="md-icode">`Content Cell`</span> | Content Cell  | Content Cell
 <span class="md-icode">`Content Cell`</span> | Content Cell  | Content Cell
-
-</span>If you wish, you can add a leading and tailing pipe to each line of the table:
+</span>
+If you wish, you can add a leading and tailing pipe to each line of the table:
 
 <span class="md-table">| <span class="md-icode">`First Header`</span> | Second Header | Third Header |
 | -------------- | ------------- | ------------ |
 | <span class="md-icode">`Content Cell`</span> | Content Cell  | Content Cell |
 | <span class="md-icode">`Content Cell`</span> | Content Cell  | Content Cell |
-
-</span>Specify alignment for each column by adding colons to separator lines:
+</span>
+Specify alignment for each column by adding colons to separator lines:
 
 <span class="md-table"><span class="md-icode">`First Header`</span> | Second Header | Third Header
 :------------- | :-----------: | -----------:
 <span class="md-icode">`Left `</span>        | Center        | Right
 <span class="md-icode">`Left`</span>         | Center        | Right
+</span>
 
-
-</span><span class="md-heading md-heading-3">### Shortcuts</span>
+<span class="md-heading md-heading-3">### Shortcuts</span>
 
 <span class="md-heading md-heading-4">#### View</span>
 

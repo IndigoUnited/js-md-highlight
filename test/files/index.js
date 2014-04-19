@@ -1,7 +1,7 @@
 define([
     'require',
     'text!./mou.md',
-    'text!./mou.hg.md'
+    'text!./mou.hg'
 ], function (require) {
 
     'use strict';
@@ -10,7 +10,7 @@ define([
         {
             name: 'mou.md',
             md: require('text!./mou.md'),
-            hg: require('text!./mou.hg.md')
+            hg: require('text!./mou.hg')
         }
     ];
 });
