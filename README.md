@@ -3,7 +3,7 @@
 A library that highlights markdown (+ git flavored markdown).
 This library grammar/parser is heavily based on [marked](http://github.com/chjj/marked).
 
-Note that this library is not `yet another markdown to html converter.
+Note that this library is not `yet another markdown to html` converter.
 This library is meant to be used by markdown editors to provide syntax highlighting.
 
 
